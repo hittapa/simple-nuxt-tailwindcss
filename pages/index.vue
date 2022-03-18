@@ -182,7 +182,7 @@ export default {
   },
   data: function () {
     return {
-      tab: "tab3",
+      tab: "tab1",
     };
   },
   methods: {
@@ -196,6 +196,12 @@ export default {
 <style scoped>
   #section-1-2 {
     background: transparent linear-gradient(134deg, #E6FFFA 0%, #EBF4FF 100%) 0% 0% no-repeat padding-box;
+    -webkit-mask: radial-gradient(var(--r1,160%) var(--r2,68.15%) at top ,white 79.5%,transparent 80%) top left, radial-gradient(var(--r1,160%) var(--r2,68.15%) at bottom,transparent 79.5%,white 80%) top center, radial-gradient(var(--r1,160%) var(--r2,68.15%) at top ,white 79.5%,transparent 80%) top right;
+    mask: radial-gradient(var(--r1,160%) var(--r2,68.15%) at top ,white 79.5%,transparent 80%) top left, radial-gradient(var(--r1,160%) var(--r2,68.15%) at bottom,transparent 79.5%,white 80%) top center, radial-gradient(var(--r1,160%) var(--r2,68.15%) at top ,white 79.5%,transparent 80%) top right;
+    -webkit-mask-size: 33.4% 183%;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 33.4% 183%;
+    mask-repeat: no-repeat;
   }
   .fade {
     animation: fade 1s;
