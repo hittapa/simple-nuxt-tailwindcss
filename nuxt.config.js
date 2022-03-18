@@ -1,3 +1,5 @@
+const opn = require('opn');
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -47,5 +49,10 @@ export default {
         autoprefixer: {},
       },
     },
+  },
+  hooks: {
+    listen(server, { host, port }) {
+      opn(`http://${host}:${port}`)
+    }
   }
 }
